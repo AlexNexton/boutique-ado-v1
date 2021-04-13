@@ -45,19 +45,22 @@
 
 <body>
 
-    <header class="container-fluid fixed-top">
+    <header class="container-fluid fixed-top"></header>
 
-        {% if messages %}
-        <div class="message-container"></div>
-        {% endif %}
+    {% if messages %}
+    <div class="message-container"></div>
+    {% endif %}
 
-        {% block page_header %}
-        {% endblock %}
+    {% block page_header %}
+    {% endblock %}
 
-        {% block pageloadjs %}
-        {% endblock %}
+    {% block content %}
+    {% endblock %}
 
-    </header>
+    {% block pageloadjs %}
+    {% endblock %}
+
+
 
 
 
